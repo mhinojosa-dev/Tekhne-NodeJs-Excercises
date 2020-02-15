@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CALCULADORA JAVA SCRIPT</title>
+    <meta charset="UTF-8" />
+
+</head>
+
+<body>
+    <script>
+        function sumar() {
+            s1 = document.getElementById("sumando1").value;
+            s2 = document.getElementById("sumando2").value;
+
+            resultado = parseFloat(s1) + parseFloat(s2);
+
+            texto_resultado = document.getElementById("resultado");
+            texto_resultado.innerHTML = "La suma es:" + resultado;
+
+        }
+        function agregarArt() {
+            var sumar = document.getElementById("sumando3").value;
+            
+            //alert("La cantidad a sumar es: " + (parseInt(sumar) + 1));
+            texto_resultado_2 = document.getElementById("resultado2");
+            texto_resultado_2.innerHTML = "El resultado es:" + eval(sumar);
+        }
+
+    </script>
+    <H1>SUMAR JAVA SCRIPT</H1>
+    <input id="sumando1" type="text" size="10" />
+    <input id="sumando2" type="text" size="10" />
+    <input type="submit" value="=" onclick="sumar()" />
+    <div id="resultado"></div>
+
+    <H1>CALCULADORA JAVA SCRIPT</H1>
+    <input id="sumando3" type="text" size="10" />
+    <input type="submit" value="=" onclick="agregarArt()" />
+    <div id="resultado2"></div>
+</body>
+
+
+
+</html>
